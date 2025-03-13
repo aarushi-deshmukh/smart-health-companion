@@ -71,7 +71,7 @@
   display: flex;
   gap: 35px;
   align-items: flex-start;
-  width: 100%;
+  width: 70%;
   height: 100%;
 }
 
@@ -81,10 +81,6 @@ h2 {
 
 .profile-section {
   width: 50%;
-}
-
-.profile {
-  padding: 20px;
 }
 
 .profile-card {

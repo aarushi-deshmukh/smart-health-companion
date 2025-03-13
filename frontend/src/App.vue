@@ -5,12 +5,14 @@
   const router = useRouter();
 
   const menuItems = ref([
-    { name: "Patients", icon: "💉", route: "/patients" },
-    { name: "Reminders", icon: "📌", route: "/reminders" },
-    { name: "Report", icon: "📝", route: "/report" },
-    { name: "Schedule", icon: "📆", route: "/schedule" },
-    { name: "Settings", icon: "⚙️", route: "/settings" },
-  ]);
+  { name: "Dashboard", icon: "🏠", route: "/" },
+  { name: "Patients", icon: "💉", route: "/patients" },
+  { name: "Reminders", icon: "📌", route: "/reminders" },
+  { name: "Report", icon: "📝", route: "/report" },
+  { name: "Schedule", icon: "📆", route: "/schedule" },
+  { name: "Settings", icon: "⚙️", route: "/settings" },
+]);
+
 
   const isCollapsed = ref(false);
 
@@ -25,7 +27,6 @@
       <button class="toggle-btn" @click="toggleSidebar">
         {{ isCollapsed ? '☰' : 'x' }}
       </button>
-      <h2 v-if="!isCollapsed" class="sidebar-title">Dashboard</h2>
       <ul class="menu">
         <li v-for="item in menuItems" :key="item.name" class="menu-item" @click="router.push(item.route)">
           <span class="icon">{{ item.icon }}</span>

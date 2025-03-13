@@ -2,8 +2,7 @@
   <div>
     <label for="reportType">Select Report Type:</label>
     <select v-model="selectedReport" id="reportType">
-      <option value="elisa">ELISA Reports</option>
-      <option value="blood">Blood Test Reports</option>
+      <option value="blood">Complete Blood Count (CBC)</option>
     </select>
     
     <p>Selected Report: {{ selectedReport }}</p>
